@@ -47,3 +47,4 @@ chmod 0644 %{buildroot}%{_datadir}/%{name}/layouts/*
 %{_datadir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/metainfo/org.xfce.PanelProfiles.appdata.xml
+%{_mandir}/man1/xfce4-panel-profiles.1.*
