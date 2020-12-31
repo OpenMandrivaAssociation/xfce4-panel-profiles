@@ -42,9 +42,10 @@ chmod 0644 %{buildroot}%{_datadir}/%{name}/layouts/*
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS NEWS README
+%doc AUTHORS NEWS README*
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.xfce.PanelProfiles.desktop
 %{_datadir}/metainfo/org.xfce.PanelProfiles.appdata.xml
 %{_mandir}/man1/xfce4-panel-profiles.1.*
+%{_iconsdir}/hicolor/*/apps/org.xfce.PanelProfiles.{png,svg}
