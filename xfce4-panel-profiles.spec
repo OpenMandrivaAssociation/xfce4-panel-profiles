@@ -2,7 +2,7 @@
 
 Name:		xfce4-panel-profiles
 Summary:	Simple application to manage Xfce panel layouts
-Version:	1.0.12
+Version:	1.0.13
 Release:	1
 License:	GPLv3
 Group:		Graphical desktop/Xfce
