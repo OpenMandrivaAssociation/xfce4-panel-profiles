@@ -1,7 +1,7 @@
-diff -rub a/xfce4-panel-profiles/xfce4-panel-profiles.py b/xfce4-panel-profiles/xfce4-panel-profiles.py
---- a/xfce4-panel-profiles/xfce4-panel-profiles.py	2020-12-17 15:35:57.070795000 +0800
-+++ b/xfce4-panel-profiles/xfce4-panel-profiles.py	2020-12-22 10:03:08.861561240 +0800
-@@ -32,16 +32,9 @@
+diff -uraN xfce4-panel-profiles-1.0.14/xfce4-panel-profiles/xfce4-panel-profiles.py omv-xfce4-panel-profiles-1.0.14/xfce4-panel-profiles/xfce4-panel-profiles.py
+--- xfce4-panel-profiles-1.0.14/xfce4-panel-profiles/xfce4-panel-profiles.py	2023-06-05 09:01:02.000000000 +0200
++++ omv-xfce4-panel-profiles-1.0.14/xfce4-panel-profiles/xfce4-panel-profiles.py	2023-06-26 13:37:24.947228695 +0200
+@@ -28,18 +28,11 @@
  
  import gi
  gi.require_version('Gtk', '3.0')
@@ -10,12 +10,16 @@ diff -rub a/xfce4-panel-profiles/xfce4-panel-profiles.py b/xfce4-panel-profiles/
 -try:
 -  gi.require_version('Libxfce4ui', '2.0')
 -  from gi.repository import Libxfce4ui as libxfce4ui
+-  from gi.repository import Libxfce4util as libxfce4util
 -except ValueError:
 -  gi.require_version('libxfce4ui', '2.0')
 -  from gi.repository import libxfce4ui
+-  from gi.repository import libxfce4util
 +gi.require_version('Libxfce4ui', '2.0')
  
 -from gi.repository import Gtk, GLib, Gio
++from gi.repository import libxfce4util
++
 +from gi.repository import Gtk, GLib, Gio, Libxfce4ui
  
  from panelconfig import PanelConfig
