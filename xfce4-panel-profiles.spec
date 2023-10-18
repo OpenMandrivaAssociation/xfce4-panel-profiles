@@ -14,6 +14,8 @@ Source0:	https://archive.xfce.org/src/apps/xfce4-panel-profiles/%{url_ver}/xfce4
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	intltool
+BuildRequires:  autoconf
+BuildRequires:  automake
 BuildRequires:	python3-devel
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  xfce4-dev-tools
@@ -31,6 +33,7 @@ panel layouts.
 %autopatch -p1
 
 %build
+autoreconf -fiv
 ./configure --prefix=%{_prefix}
 %make_build
 
