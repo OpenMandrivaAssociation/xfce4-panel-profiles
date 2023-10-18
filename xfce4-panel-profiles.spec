@@ -16,6 +16,7 @@ BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	python3-devel
 BuildRequires:  pkgconfig(pygobject-3.0)
+BuildRequires:  xfce4-dev-tools
 Requires:	python3dist(pygobject)
 
 %description
