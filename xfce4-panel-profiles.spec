@@ -10,7 +10,7 @@ License:	GPLv3
 Group:		Graphical desktop/Xfce
 Url:		https://git.xfce.org/apps/xfce4-panel-profiles/about/
 Source0:	https://archive.xfce.org/src/apps/xfce4-panel-profiles/%{url_ver}/xfce4-panel-profiles-%{version}.tar.bz2
-Patch0:		libxfce4ui.patch
+#Patch0:		libxfce4ui.patch
 BuildArch:	noarch
 BuildRequires:	intltool
 BuildRequires:  pkgconfig(pygobject-3.0)
