@@ -30,7 +30,7 @@ panel layouts.
 %build
 ./configure \
 	--prefix=%{_prefix} \
-	--python=python3
+	--python=python
 %make_build
 
 %install
