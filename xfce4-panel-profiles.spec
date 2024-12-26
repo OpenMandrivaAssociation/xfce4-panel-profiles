@@ -25,7 +25,7 @@ This tool makes it possible to backup, restore, import, and export these
 panel layouts.
 
 %prep
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure
