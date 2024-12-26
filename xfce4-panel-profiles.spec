@@ -1,6 +1,6 @@
 %define url_ver	%(echo %{version} | cut -d. -f1,2)
 
-%global __requires_exclude ^typelib\\(libxfce4ui
+%global __requires_exclude ^typelib\\(libxfce4(ui|util)
 
 Name:		xfce4-panel-profiles
 Summary:	Simple application to manage Xfce panel layouts
