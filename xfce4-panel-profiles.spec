@@ -28,9 +28,9 @@ panel layouts.
 %autosetup -p1
 
 %build
-%configure
+./configure \
 	--prefix=%{_prefix} \
-	--python=python
+	--python=python3
 %make_build
 
 %install
