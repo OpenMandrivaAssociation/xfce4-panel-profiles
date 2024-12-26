@@ -28,7 +28,7 @@ panel layouts.
 %autopatch -p1
 
 %build
-./configure \
+%configure
 	--prefix=%{_prefix} \
 	--python=python
 %make_build
